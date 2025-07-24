@@ -1,0 +1,78 @@
+@config "../../tailwind.config.js";
+@import "tailwindcss";
+
+/* dark mood */
+:root {
+  --color-primary: #ce1212;
+  --hover-color-primary: #fd3434f8;
+  --color-secondary: #37373f;
+  --color-muted: #7f7f90;
+  --background-primary: #eeeeee;
+  --background-secondary: #ffffff;
+  --text-black: #000;
+}
+
+/* dark */
+.dark {
+  --color-primary: #ce7a05;
+  --hover-color-primary:rgb(255, 149, 0);
+  --color-secondary: #ffffff;
+  --color-muted: #b5b5b5;
+  --background-primary: #252525;
+  --background-secondary: #202020;
+  --text-black: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-primary;
+}
+p,
+a {
+  @apply font-secondary;
+}
+.row {
+  @apply flex flex-wrap;
+}
+
+.link-underline::after {
+  content: "";
+  @apply absolute -bottom-0.5 left-0 bg-primary h-0.5 w-0 duration-300;
+}
+.link-underline:hover::after {
+  @apply w-full;
+}
+.active-link{
+  @apply text-primary font-semibold
+}
+.active-link::after {
+  content: '';
+  @apply absolute -bottom-0.5 left-0 bg-primary h-0.5 w-full  duration-300;
+}
+
+
+
+.btn {
+  @apply bg-primary hover:bg-hover text-white font-normal text-[1.125rem] tracking-wider inline-block px-4 py-3 rounded-full transition-all duration-500 shadow-[0_8px_28px_rgba(0,0,0,0.1)];
+}
+.form-control {
+  @apply w-full  duration-300 outline-2  outline-[#e8e3e3] p-3 rounded-sm  hover:outline-primary;
+}
+.swiper-pagination-bullet {
+  @apply bg-primary;
+}
+
+.tab-underline::after {
+  content: "";
+  @apply bg-[#ddd] h-0.5 duration-300 w-full absolute -bottom-2 left-0;
+}
+.tab-underline:hover::after {
+  @apply bg-primary;
+}
+.active-tab:after {
+  @apply bg-primary;
+}
