@@ -68,7 +68,7 @@ function renderMeals(meals) {
     .slice(0, 12)
     .map(
       (meal, i) => `
-    <div class="card text-center">
+    <div class="card text-center shadow-lg rounded  p-3 dark:bg-[#000]">
       <img src="${
         meal.strMealThumb
       }" class="w-full object-cover rounded" alt="${meal.strMeal}" />
