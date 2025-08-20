@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sufra</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- file style output -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="">
+    <!-- start navbar -->
+    <nav
+      class="navbar dark:bg-[#000] shadow-lg bg-white py-5 sticky top-0 left-0 right-0 z-50"
+    >
+      <div class="container flex justify-between items-center">
+        <a href="#" class="flex items-center gap-2"
+          ><img src="src/img/logo.png" class="size-15" alt="logo" /><span
+            class="text-2xl text-black font-bold duration-300 hover:text-primary"
+            >Sufra
+          </span>
+        </a>
+
+        <ul
+          id="mobileMenu"
+          class="hidden absolute top-full left-0 lg:static right-0 bg-white dark:bg-[#000] text-center py-7 lg:py-0 lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-7"
+        >
+          <li>
+            <a
+              class="link-underline hover:text-primary relative active-link capitalize text-black"
+              href="#hero"
+              >home</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#about"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#menu"
+              >menu</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#testimontals"
+              >testimontals</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#chefs"
+              >chefs</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#book"
+              >book</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-underline hover:text-primary relative capitalize text-black"
+              href="#contact"
+              >contact</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="dark-mood size-15 gap-5 text-black flex justify-center items-center"
+        >
+          <span id="toggle" class="text-3xl cursor-pointer">
+            <i class="fa-solid fa-moon"></i
+          ></span>
+          <span id="menuToggle" class="block lg:hidden text-3xl cursor-pointer">
+            <i class="fa-solid fa-bars-staggered"></i
+          ></span>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- =============== start hero  ===============  -->
+    <section class="hero bg-backgroundprimary py-10" id="hero">
+      <div class="container">
+        <div class="flex flex-wrap items-center justify-between gap-7">
+          <div class="md:w-6/12">
+            <div class="hero-content">
+              <h1 class="text-7xl text-secondary font-semibold leading-20">
+                Enjoy Your Healthy <br />
+                Delicious Food
+              </h1>
+              <p class="text-muted text-lg py-6">
+                Sed autem laudantium dolores. Voluptatem itaque ea consequatur
+                eveniet. Eum quas beatae cumque eum quaerat.
+              </p>
+              <div class="flex flex-wrap items-center gap-10">
+                <a href="#book" class="btn">Book a table</a>
+                <a class="flex items-center gap-3" href="">
+                  <i class="fa-regular fa-circle-play text-primary fa-2x"></i>
+                  <span
+                    class="block text-black duration-300 font-semibold hover:text-primary"
+                    >watch a video</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-5/12 order-first md:order-last">
+            <img
+              class="w-full animate-updown"
+              src="src/img/hero-img.png"
+              alt="hero"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end hero  ===============  -->
+
+    <!-- ===============  start about  ===============  -->
+    <section class="about bg-backgroundsecondary pt-20 pb-10" id="about">
+      <div class="header text-center">
+        <p class="text-muted mb-2">About Us</p>
+        <h2 class="text-muted text-6xl bg-backgroundsecondary">
+          Learn More <span class="text-primary font-primary">About Us</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="grid md:grid-cols-2 py-15 gap-10">
+          <div class="about-img">
+            <img src="src/img/about.jpg" class="w-full rounded" alt="" />
+            <div class="img-content border-4 border-muted p-7 mt-5 text-center">
+              <p class="text-2xl mb-3 text-black font-bold">Book a Table</p>
+              <a href="tel:0103395564" class="text-primary text-2xl"
+                >+1 5589 55488 55
+              </a>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <p class="text-muted mb-4 leading-8 italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="flex flex-col gap-5">
+              <li class="flex items-start gap-2">
+                <span
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </span>
+                <span class="text-black"
+                  >Ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </span>
+                <span class="text-black"
+                  >Duis aute irure dolor in reprehenderit in voluptate velit.
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span
+                  class="w-6 h-6 bg-primary text-white rounded-full flex justify-center items-center"
+                >
+                  <i class="fa-solid fa-check text-xs"></i>
+                </span>
+                <span class="text-black"
+                  >Duis aute irure dolor in reprehenderit in voluptate velit.
+                </span>
+              </li>
+            </ul>
+            <p class="text-muted py-7">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate trideta storacalaperda
+              mastiro dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="relative">
+              <img
+                src="src/img/about.jpg"
+                class="w-full rounded"
+                alt="img about"
+              />
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="w-15 h-15 absolute top-1/2 left-1/2 transform -translate-x-1/2 duration-300 -translate-y-1/2 border-1 border-primary cursor-pointer hover:bg-transparent hover:text-primary hover:border-primary bg-primary text-white rounded-full flex justify-center items-center"
+              >
+                <i class="fa-solid fa-play fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end about  ===============  -->
+
+    <!-- ===============  start counter  ===============  -->
+    <section
+      class="counter bg-[url('../src/img/stats-bg.jpg')] bg-no-repeat bg-cover bg-center py-50 relative"
+    >
+      <div
+        class="absolute inset-0 bg-[rgba(0,0,0,0.5)] flex items-center justify-center"
+      >
+        <div class="container">
+          <div
+            class="flex flex-wrap justify-between gap-y-10 items-center text-center"
+          >
+            <div class="w-6/12 lg:w-3/12">
+              <div class="counter-inner text-white">
+                <p class="text-5xl font-bold">232</p>
+                <p class="mt-2">Clients</p>
+              </div>
+            </div>
+            <div class="w-6/12 lg:w-3/12">
+              <div class="counter-inner text-white">
+                <p class="text-5xl font-bold">521</p>
+                <p class="mt-2">Projects</p>
+              </div>
+            </div>
+            <div class="w-6/12 lg:w-3/12">
+              <div class="counter-inner text-white">
+                <p class="text-5xl font-bold">1453</p>
+                <p class="mt-2">Hours Of Support</p>
+              </div>
+            </div>
+            <div class="w-6/12 lg:w-3/12">
+              <div class="counter-inner text-white">
+                <p class="text-5xl font-bold">32</p>
+                <p class="mt-2">Workers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end counter  ===============  -->
+
+    <!-- ===============  start Menu  ===============  -->
+    <section class="menu py-15 bg-backgroundsecondary" id="menu">
+      <div class="header text-center">
+        <p class="text-muted mb-2">Our Menu</p>
+        <h2 class="text-muted text-6xl">
+          Check Our
+          <span class="text-primary font-primary"> Sufra Menu</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="tabs">
+          <ul class="list-none my-18 flex flex-wrap justify-center gap-7">
+            <li
+              class="active-tab tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Beef
+            </li>
+            <li
+              class="tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Chicken
+            </li>
+            <li
+              class="tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Seafood
+            </li>
+            <li
+              class="tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Vegetarian
+            </li>
+            <li
+              class="tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Pasta
+            </li>
+            <li
+              class="tab-underline relative text-2xl text-secondary cursor-pointer"
+            >
+              Dessert
+            </li>
+          </ul>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+          <!-- test  -->
+          <!-- <div class="card text-center">
+            <img src="src/img/hero-img.png" class="w-full" alt="img" />
+            <p class="text-black pt-3">Magnam Tiste</p>
+            <p class="text-black pt-3">price</p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end Menu  ===============  -->
+
+    <!-- ===============  start testimonials  ===============  -->
+    <section class="testimontals py-15 bg-backgroundprimary" id="testimontals">
+      <div class="header text-center">
+        <p class="text-muted mb-2">TESTIMONIALS</p>
+        <h2 class="text-muted text-6xl">
+          What Are They
+          <span class="text-primary font-primary"> Saying About Us</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper my-10">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div
+                class="grid lg:grid-cols-4 gap-10 justify-center items-center"
+              >
+                <div class="col-span-4 lg:col-span-3">
+                  <div class="testimonial-content p-3 lg-p-30">
+                    <p class="text-muted">
+                      <i class="fa-solid text-primary fa-quote-left"></i>
+                      <span
+                        >Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.</span
+                      >
+                      <i class="fa-solid text-primary fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-3xl text-primary pt-5">John Larson</h3>
+                    <h4 class="text-2xl text-secondary">Entrepreneur</h4>
+                    <div class="stars mt-5">
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-4 lg:col-span-1 flex justify-center lg:justify-start"
+                >
+                  <img
+                    src="src/img/testimonial-1.jpg"
+                    class="rounded-full w-2/3 lg:w-full"
+                    alt="testimontals-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div
+                class="grid lg:grid-cols-4 gap-10 justify-center items-center"
+              >
+                <div class="col-span-4 lg:col-span-3">
+                  <div class="testimonial-content p-3 lg-p-30">
+                    <p class="text-muted">
+                      <i class="fa-solid text-primary fa-quote-left"></i>
+                      <span
+                        >Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.</span
+                      >
+                      <i class="fa-solid text-primary fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-3xl text-primary pt-5">John Larson</h3>
+                    <h4 class="text-2xl text-secondary">Entrepreneur</h4>
+                    <div class="stars mt-5">
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-4 lg:col-span-1 flex justify-center lg:justify-start"
+                >
+                  <img
+                    src="src/img/testimonial-2.jpg"
+                    class="rounded-full w-2/3 lg:w-full"
+                    alt="testimontals-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div
+                class="grid lg:grid-cols-4 gap-10 justify-center items-center"
+              >
+                <div class="col-span-4 lg:col-span-3">
+                  <div class="testimonial-content p-3 lg-p-30">
+                    <p class="text-muted">
+                      <i class="fa-solid text-primary fa-quote-left"></i>
+                      <span
+                        >Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.</span
+                      >
+                      <i class="fa-solid text-primary fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-3xl text-primary pt-5">John Larson</h3>
+                    <h4 class="text-2xl text-secondary">Entrepreneur</h4>
+                    <div class="stars mt-5">
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-4 lg:col-span-1 flex justify-center lg:justify-start"
+                >
+                  <img
+                    src="src/img/testimonials-3.jpg"
+                    class="rounded-full w-2/3 lg:w-full"
+                    alt="testimontals-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div
+                class="grid lg:grid-cols-4 gap-10 justify-center items-center"
+              >
+                <div class="col-span-4 lg:col-span-3">
+                  <div class="testimonial-content p-3 lg-p-30">
+                    <p class="text-muted">
+                      <i class="fa-solid text-primary fa-quote-left"></i>
+                      <span
+                        >Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.</span
+                      >
+                      <i class="fa-solid text-primary fa-quote-right"></i>
+                    </p>
+                    <h3 class="text-3xl text-primary pt-5">John Larson</h3>
+                    <h4 class="text-2xl text-secondary">Entrepreneur</h4>
+                    <div class="stars mt-5">
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                      <i class="fa-solid fa-star text-[#ffc107]"></i>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-4 lg:col-span-1 mb-13 flex justify-center lg:justify-start"
+                >
+                  <img
+                    src="src/img/testimonials-4.jpg"
+                    class="rounded-full w-2/3 lg:w-full"
+                    alt="testimontals-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination (dots) -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end testimontals  ===============  -->
+
+    <!-- ===============  start chefs  ===============  -->
+    <section class="chefs py-15 bg-backgroundsecondary" id="chefs">
+      <div class="header text-center">
+        <p class="text-muted mb-2">CHEFS</p>
+        <h2 class="text-muted text-6xl bg-backgroundsecondary">
+          Our <span class="text-primary font-primary">Professional Chefs</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-13">
+          <div class="card shadow-lg relative rounded overflow-hidden group">
+            <div class="inner-card">
+              <div class="img-chef">
+                <img src="src/img/chefs-1.jpg" alt="chefs-1" />
+              </div>
+              <div class="content-card dark:bg-[#000] text-center rounded p-8">
+                <p class="text-2xl text-black font-semibold">Walter White</p>
+                <p class="text-secondary pb-3">Master Chef</p>
+                <p class="text-muted">
+                  Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                  tenetur ipsa quae aut.Ipsum exercitationem iure minima enim
+                  corporis et voluptate.
+                </p>
+              </div>
+            </div>
+
+            <!-- overlay -->
+            <div
+              class="overlay absolute top-5 right-full group-hover:right-3 duration-300 z-10"
+            >
+              <ul class="medai flex flex-col gap-4 bg-white p-3 rounded">
+                <li>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-linkedin cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card shadow-lg relative rounded overflow-hidden group">
+            <div class="inner-card">
+              <div class="img-chef">
+                <img src="src/img/chefs-2.jpg" alt="chefs-1" />
+              </div>
+              <div class="content-card dark:bg-[#000] text-center rounded p-8">
+                <p class="text-2xl text-black font-semibold">White Jhonson</p>
+                <p class="text-secondary pb-3">Patissier</p>
+                <p class="text-muted">
+                  Quo esse repellendus quia id. Est eum et accusantium pariatur
+                  fugit nihil minima suscipit corporis. Voluptate sed quas
+                  reiciendis animi neque sapiente.
+                </p>
+              </div>
+            </div>
+
+            <!-- overlay -->
+            <div
+              class="overlay absolute top-5 right-full group-hover:right-3 duration-300 z-10"
+            >
+              <ul class="medai flex flex-col gap-4 bg-white p-3 rounded">
+                <li>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-linkedin cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card shadow-lg relative rounded overflow-hidden group">
+            <div class="inner-card">
+              <div class="img-chef">
+                <img src="src/img/chefs-3.jpg" alt="chefs-1" />
+              </div>
+              <div class="content-card dark:bg-[#000] text-center rounded p-8">
+                <p class="text-2xl text-black font-semibold">
+                  William Anderson
+                </p>
+                <p class="text-secondary pb-3">Cook</p>
+                <p class="text-muted">
+                  Vero omnis enim consequatur. Voluptas consectetur unde qui
+                  molestiae deserunt. Voluptates enim aut architecto porro
+                  aspernatur molestiae modi.
+                </p>
+              </div>
+            </div>
+
+            <!-- overlay -->
+            <div
+              class="overlay absolute top-5 right-full group-hover:right-3 duration-300 z-10"
+            >
+              <ul class="medai flex flex-col gap-4 bg-white p-3 rounded">
+                <li>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-linkedin cursor-pointer duration-300 opacity-50 hover:opacity-100"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end chefs  ===============  -->
+
+    <!-- ===============  start book  ===============  -->
+    <section class="book py-20 bg-backgroundsecondary" id="book">
+      <div class="header text-center">
+        <p class="text-muted mb-2">Book A Table</p>
+        <h2 class="text-muted text-6xl bg-backgroundsecondary">
+          Book Your <span class="text-primary font-primary">Stay With Us</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="grid md:grid-cols-3 mt-13">
+          <div class="md:col-span-1">
+            <div class="book-img d-flex justify-center">
+              <img
+                src="src/img/reservation.jpg"
+                class="object-cover"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="md:col-span-2 bg-backgroundprimary">
+            <div class="row-cols-2 book-content p-5">
+              <form action="" class="text-center">
+                <div class="grid md:grid-cols-3 gap-3 mb-6">
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="text"
+                    placeholder="your name"
+                    name="name"
+                  />
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="email"
+                    placeholder="your email"
+                    name="email"
+                  />
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="tel"
+                    placeholder="your phone"
+                    name="phone"
+                  />
+                </div>
+                <div class="grid md:grid-cols-3 gap-3 mb-6">
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="date"
+                    name="date"
+                  />
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="time"
+                    name="time"
+                  />
+                  <input
+                    class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted"
+                    type="number"
+                    placeholder="# of people"
+                    name="number"
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="message"
+                  class="form-control bg-white dark:bg-[#000] text-black placeholder:text-muted mb-7 resize-none min-h-50"
+                ></textarea>
+                <a href="#" class="btn btn-main">send message</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============  end book  ===============  -->
+
+    <!-- ===============  start contact  ===============  -->
+    <section class="contact py-10 bg-backgroundsecondary" id="contact">
+      <div class="header text-center">
+        <p class="text-muted mb-2">Contact</p>
+        <h2 class="text-muted text-6xl bg-backgroundsecondary">
+          Need Help? <span class="text-primary font-primary">Contact Us</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="map my-15">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13911.753124432982!2d31.205395799999998!3d29.342804500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1745687483654!5m2!1sar!2seg"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <div
+              class="caption bg-white dark:bg-[#000] shadow-lg p-6 flex items-center gap-8 rounded-lg"
+            >
+              <div
+                class="icon size-14 flex items-center justify-center bg-primary rounded-full text-white"
+              >
+                <span><i class="fa-regular fa-map text-lg"></i></span>
+              </div>
+              <div class="caption-conent">
+                <p class="text-2xl font-bold text-muted">Our Address</p>
+                <p class="text-black">A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="caption bg-white dark:bg-[#000] shadow-lg p-6 flex items-center gap-8 rounded-lg"
+            >
+              <div
+                class="icon size-14 flex items-center justify-center bg-primary rounded-full text-white"
+              >
+                <span><i class="fa-regular fa-envelope text-2xl"></i></span>
+              </div>
+              <div class="caption-conent">
+                <p class="text-2xl font-bold text-muted">Email Us</p>
+                <a class="text-black" href="mailto:moaz01140575861@gmail.com"
+                  >contact@example.com</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="caption bg-white dark:bg-[#000] shadow-lg p-6 flex items-center gap-8 rounded-lg"
+            >
+              <div
+                class="icon size-14 flex items-center justify-center bg-primary rounded-full text-white"
+              >
+                <span><i class="fa-solid fa-phone text-lg"></i></span>
+              </div>
+              <div class="caption-conent">
+                <p class="text-2xl font-bold text-muted">Call Us</p>
+                <a class="text-black" href="tel:+201033928814"
+                  >+1 5589 55488 55</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="caption bg-white dark:bg-[#000] shadow-lg p-6 flex items-center gap-8 rounded-lg"
+            >
+              <div
+                class="icon size-14 flex items-center justify-center bg-primary rounded-full text-white"
+              >
+                <span><i class="fa-solid fa-share-nodes text-lg"></i></span>
+              </div>
+              <div class="caption-conent">
+                <p class="text-2xl font-bold text-muted">Opening Hours</p>
+                <p class="text-black">
+                  <span class="font-bold">Mon-Sat:</span> 11AM - 23PM;
+                  <span class="font-bold">Sunday</span> : Closed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+          class="form-contact mt-7 shadow-lg rounded-lg p-6 dark:bg-[#000] text-center"
+        >
+          <div class="groub-input mb-5 grid lg:grid-cols-2 gap-5">
+            <input
+              class="form-control text-black dark:text-white dark:placeholder:text-white"
+              type="text"
+              name="name"
+              placeholder="your name"
+            />
+            <input
+              class="form-control text-black dark:text-white dark:placeholder:text-white"
+              type="email"
+              name="email"
+              placeholder="your email"
+            />
+          </div>
+          <input
+            class="form-control text-black dark:text-white mb-5 dark:placeholder:text-white"
+            type="text"
+            name="subject"
+            placeholder="your subject"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="message"
+            class="form-control text-black dark:text-white mb-5 dark:placeholder:text-white resize-y min-h-50"
+          ></textarea>
+          <a href="#" class="btn btn-main">send message</a>
+        </form>
+      </div>
+    </section>
+    <!-- ===============  end contact  ===============  -->
+
+    <!-- ===============  start footer  ===============  -->
+    <footer class="footer py-15 bg-[#1F1F24]" id="footer">
+      <div class="container">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div
+            class="box flex flex-col border-b md:border-0 border-[#ddd] pb-4 text-white"
+          >
+            <div class="flex items-center gap-5 mb-3">
+              <i class="fa-solid fa-location-dot text-primary text-2xl"></i>
+              Address
+            </div>
+            <p class="text-muted">A108 Adam Street</p>
+            <p class="text-muted">A108 Adam Street</p>
+          </div>
+          <div
+            class="box flex flex-col border-b md:border-0 border-[#ddd] pb-4 text-white"
+          >
+            <div class="flex items-center gap-5 mb-3">
+              <i class="fa-solid fa-phone text-primary text-2xl"></i>
+              Contact
+            </div>
+            <p class="text-muted">Phone: +1 5589 55488 55</p>
+            <p class="text-muted">Email: info@example.com</p>
+          </div>
+          <div
+            class="box flex flex-col border-b md:border-0 border-[#ddd] pb-4 text-white"
+          >
+            <div class="flex items-center gap-5 mb-3">
+              <i class="fa-solid fa-clock text-primary text-2xl"></i>
+              Opening Hours
+            </div>
+            <p class="text-muted">Mon-Sat: 11AM - 23PM</p>
+            <p class="text-muted">Sunday: Closed</p>
+          </div>
+          <div class="box flex flex-col text-white">
+            <p>Follow Us</p>
+            <div class="media">
+              <p class="py-1 text-muted">Social Media</p>
+              <div class="social-media flex gap-5">
+                <a class="duration-300 hover:text-primary" href="https://x.com/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  class="duration-300 hover:text-primary"
+                  href="https://www.facebook.com/?locale=ar_AR"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  class="duration-300 hover:text-primary"
+                  href="https://www.instagram.com/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                  class="duration-300 hover:text-primary"
+                  href="https://www.linkedin.com/feed/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ===============  end footer  ===============  -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- main JS -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

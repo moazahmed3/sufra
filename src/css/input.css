@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* dark mood */
+
+@theme {
+  /* theme color  */
+  --color-primary: #ce1212;
+  --color-hover: #fd3434f8;
+  --color-secondary: #37373f;
+  --color-muted: #7f7f90;
+  --color-backgroundprimary: #eeeeee;
+  --color-backgroundsecondary: #ffffff;
+  --color-black: #000;
+
+  /* theme font  */
+
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
+
+  /* theme  animate*/
+  --animate-updown: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+/* class dark */
+
+.dark {
+  --color-primary: #ce7a05;
+  --color-hover: rgb(255, 149, 0);
+  --color-secondary: #ffffff;
+  --color-muted: #b5b5b5;
+  --color-backgroundprimary: #252525;
+  --color-backgroundsecondary: #202020;
+  --color-black: #fff;
+}
+
+/* ========== Base Styles ========== */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+  p,
+  a {
+    @apply font-secondary;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-16 xl:px-20 2xl:px-24;
+  }
+
+  .link-underline::after {
+    @apply absolute -bottom-0.5 left-0 bg-primary h-0.5 w-0 duration-300;
+  }
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  .active-link {
+    @apply text-primary font-semibold relative;
+  }
+  .active-link::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 bg-primary h-0.5 w-full duration-300;
+  }
+}
+
+@layer components {
+  /* button */
+  .btn {
+    @apply bg-primary hover:bg-hover text-white  text-[1.125rem] tracking-wider inline-block px-4 py-3 rounded-full transition-all duration-500 shadow-[0_8px_28px_rgba(0,0,0,0.1)];
+  }
+
+  /* input */
+  .form-control {
+    @apply w-full duration-300 outline-2 outline-[#e8e3e3] p-3 rounded-sm hover:outline-primary;
+  }
+
+  /* tab */
+  .tab-underline::after {
+    content: "";
+    @apply bg-[#ddd] h-0.5 duration-300 w-full absolute -bottom-2 left-0;
+  }
+  .tab-underline:hover::after {
+    @apply bg-primary;
+  }
+  .active-tab::after {
+    @apply bg-primary;
+  }
+  /* animate */
+  @keyframes up-down {
+    0% {
+      transform: translateY(12px);
+    }
+    100% {
+      transform: translateY(-12px);
+    }
+  }
+}
+
+/* swiper */
+.swiper-pagination-bullet {
+  @apply bg-primary;
+}
